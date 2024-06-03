@@ -39,6 +39,11 @@
         "format": "prettier --write \"./src\"",
         "run-all": "npm-run-all --parallel test lint:fix"
     },
+    
+    "scripts": {
+    "start": "cross-env NODE_OPTIONS=--max_old_space_size=4096 webpack"
+},
+
     "lint-staged": {
         "*.js": [
             "npm run lint:fix"
